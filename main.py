@@ -21,6 +21,7 @@ while(game_on):
     state_guess = screen.textinput(title=f"{len(guessed_states)}/50 States Correct", prompt="Name the state").title()
     
     if state_guess == "Exit":
+        # list comprehension use 
         states_to_learn = [state for state in states if state not in guessed_states]
 
         # turn states_to_learn dict to csv
